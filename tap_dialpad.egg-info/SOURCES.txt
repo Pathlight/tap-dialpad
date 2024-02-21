@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tap_dialpad/__init__.py
+tap_dialpad.egg-info/PKG-INFO
+tap_dialpad.egg-info/SOURCES.txt
+tap_dialpad.egg-info/dependency_links.txt
+tap_dialpad.egg-info/entry_points.txt
+tap_dialpad.egg-info/requires.txt
+tap_dialpad.egg-info/top_level.txt
+tap_dialpad/schemas/sample_stream.json

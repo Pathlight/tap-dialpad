@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    tap-dialpad=tap_dialpad:main
+    
