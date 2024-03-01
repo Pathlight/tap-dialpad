@@ -1,0 +1,46 @@
+{
+    "type": ["null", "object"],
+    "additionalProperties": false,
+    "properties": {
+		"call_id": {
+			"type": ["string"]
+		},
+		"target_id": {
+			"type": ["string"]
+		},
+		"name": {
+			"type": ["null","string"]
+		},
+		"email": {
+			"type": ["null","string"]
+		},
+		"operator_id": {
+			"type": ["string"]
+		},
+		"operator_name": {
+			"type": ["null","string"]
+		},
+		"operator_email": {
+			"type": ["null","string"]
+		},
+		"external_number": {
+			"type": ["null","string"]
+		},
+		"internal_number": {
+			"type": ["null","string"]
+		},
+		"date": {
+            "type": ["string"],
+            "format": "date-time"
+		},
+		"recording_url": {
+			"type": ["string"]
+		},
+		"duration": {
+			"type": ["string"]
+		},
+		"timezone": {
+			"type": ["string"]
+		}
+	}
+}

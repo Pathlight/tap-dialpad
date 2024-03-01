@@ -6,12 +6,22 @@ spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md).
 
 This tap:
 
-- Pulls raw data from [FIXME](http://example.com)
-- Extracts the following resources:
-  - [FIXME](http://example.com)
-- Outputs the schema for each resource
-- Incrementally pulls data based on the input state
+- Pulls raw data from [Dialpad](https://www.dialpad.com/)
+- Check schemas directory for data format
 
----
+To run:
+```commandline
+// Build tap
+pip install . 
 
-Copyright &copy; 2018 Stitch
+// Use config file to 'discover' available streams
+// Check __init__.py for required config keys
+tap-dialpad --discover --config ./config.json > catalog.json // Use 
+
+// Edit the catalog.json to add 'selected':true property at metadata.metadata
+// level to enable sync for that stream
+
+// Run sync for the tap to output schema, record, and state
+tap-dialpad --config ./config.json --catalog ./catalog.json
+```
+
