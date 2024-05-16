@@ -20,7 +20,7 @@ def sync_recordings(stream, config, state):
     if not date_last_ran:
        days_ago_end = 1 # default to getting data from yesterday
     else:
-        days_ago_end = (datetime.now() - datetime.fromisoformat(last_run)).days
+        days_ago_end = (datetime.now() - datetime.fromisoformat(date_last_ran)).days
     rows = get_recordings(config, days_ago_end)
     formatted_rows = format_recordings(rows)
 
